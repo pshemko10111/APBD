@@ -43,15 +43,15 @@ namespace APBD
         {
             String[] strings = numbers.Text.Split(',');
             int[] tab = new int[strings.Length];
-            for (int i = 0; i < strings.Length; i++)
+            for (int n = 0; n < strings.Length; n++)
             {
-                tab[i] = int.Parse(strings[i]);
+                tab[n] = int.Parse(strings[n]);
             }
             
             int sum = 0;
-            foreach (int item in tab)
+            foreach (int i in tab)
             {
-                sum += item;
+                sum += i;
             }
             int avg = sum / tab.Length;
             Output.Text = avg.ToString();
