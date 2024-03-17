@@ -39,7 +39,7 @@ namespace APBD
 
         
 
-        private void Calculate_Average(object sender, RoutedEventArgs e)
+        private void Calculate_Avg(object sender, RoutedEventArgs e)
         {
             String[] strings = numbers.Text.Split(',');
             int[] tab = new int[strings.Length];
