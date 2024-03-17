@@ -36,5 +36,26 @@ namespace APBD
             Console.WriteLine("Button 2 Click");
             Output.Text = "Button 2 used";
         }
+
+        
+
+        private void Calculate_Average(object sender, RoutedEventArgs e)
+        {
+            String[] strings = numbers.Text.Split(',');
+            int[] tab = new int[strings.Length];
+            for (int i = 0; i < strings.Length; i++)
+            {
+                tab[i] = int.Parse(strings[i]);
+            }
+            
+            int sum = 0;
+            foreach (int item in tab)
+            {
+                sum += item;
+            }
+            int avg = sum / tab.Length;
+            Output.Text = avg.ToString();
+            Console.WriteLine(avg);
+        }
     }
 }
