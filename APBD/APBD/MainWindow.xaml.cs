@@ -57,5 +57,24 @@ namespace APBD
             Output.Text = avg.ToString();
             Console.WriteLine(avg);
         }
+
+       private void Calculate_Max(object sender, RoutedEventArgs e)
+        {
+            String[] strings = numbers.Text.Split(',');
+            int[] tab = new int[strings.Length];
+            for (int i = 0; i < strings.Length; i++)
+            {
+                tab[i] = int.Parse(strings[i]);
+            }
+
+            int max = 0;
+            foreach (int item in tab)
+            {
+                if (item > max) { max = item; }
+            }
+            
+            Output.Text = max.ToString();
+            Console.WriteLine(max);
+        }
     }
 }
