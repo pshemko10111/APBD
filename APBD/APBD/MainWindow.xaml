@@ -10,8 +10,8 @@
         <TextBlock HorizontalAlignment="Center" Margin="0,71,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="169" Height="31" FontSize="20" TextAlignment="Center">
             Hello World
         </TextBlock>
-        <Button Content="Click me" HorizontalAlignment="Left" Margin="205,287,0,0" VerticalAlignment="Top"/>
-        <Button Content="Click me" HorizontalAlignment="Left" Margin="542,287,0,0" VerticalAlignment="Top"/>
+        <Button Name="Button1" Content="Click me" HorizontalAlignment="Left" Margin="205,287,0,0" VerticalAlignment="Top" Click="Button1_Click"/>
+        <Button Name="Button2" Content="Click me" HorizontalAlignment="Left" Margin="542,287,0,0" VerticalAlignment="Top" Click="Button2_Click"/>
 
     </Grid>
 </Window>

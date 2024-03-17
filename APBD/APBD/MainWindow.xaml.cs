@@ -24,5 +24,15 @@ namespace APBD
         {
             InitializeComponent();
         }
+
+        private void Button1_Click(object sender, RoutedEventArgs e)
+        {
+            Console.WriteLine("Button 1 Click");
+        }
+
+        private void Button2_Click(object sender, RoutedEventArgs e)
+        {
+            Console.WriteLine("Button 2 Click");
+        }
     }
 }
